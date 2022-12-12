@@ -1,0 +1,148 @@
+//====================================================================================================
+@import '~js-datepicker/src/datepicker';
+
+.order {
+    padding: 100px 0px;
+    background: #1E212C;
+
+    &__title {
+        font-size: 46px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+}
+
+.city-error {
+    display: none;
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+}
+
+
+.form {
+    padding: 30px 20px;
+    max-width: fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #C4C4C4;
+    display: flex;
+    gap: 20px;
+
+    &__to-block {
+        position: relative;
+    }
+
+    &__input {
+        border-radius: 10px;
+        padding: 20px;
+
+        &.error {
+            border: 1px solid red;
+        }
+    }
+
+    &__button {
+        padding: 20px;
+        background-color: #D84727;
+        color: #fff;
+        border-radius: 10px;
+        transition: color .3s ease;
+
+        &:hover {
+            background-color: #97260d;
+        }
+    }
+}
+
+.not-found {
+    font-size: 50px;
+    color: gray;
+}
+
+.schedule {
+    background-color: rgba($color: #D84727, $alpha: 0.1);
+    padding: 100px 0px;
+
+    &__container {
+        max-width: 880px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__title {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+}
+
+.top-route {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(1 1 1 / 10%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+
+    &__departure {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__time {
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    &__date {
+        color: gray;
+    }
+
+    &__location {}
+
+    &__point {
+        color: gray;
+    }
+
+    &__arrival {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__actions {
+        align-self: center;
+        align-items: center;
+        flex: 0 1 250px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    &__btn {
+        padding: 15px 30px;
+        background-color: #D84727;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+
+//====================================================================================================
